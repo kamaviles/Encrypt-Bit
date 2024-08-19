@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimmy's Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Manual Encryption for a Bitcoin 12-Word BIP39 Seed Phrase
+    </h1>
+
+    <h2>Template and User Guide</h2>
+    <h3>Jimmy Vaughan</h3>
+    <h4>JAMESJOHNVAUGHAN@GMAIL.COM</h4>
+        <p>
+        1. Introduction
+        This guide explains how to manually encrypt your 12-word Bitcoin seed phrase using a 4-digit code and a numeric keypad (dial pad). This method provides an additional layer of security, though it's important to understand its limitations. The guide also provides a PDF template of the manual encryption method, and links to resources for generating decoy words and securely organizing your seed phrase.
+        Note: This is not a seed phrase generator but a way to securely store a copy of your seed phrase.
+    </p>
+        <p>2. What You Need
+        - 12-word BIP-39 seed phrase (generated from your Bitcoin wallet of choice)
+        - The Template for the numeric keypad (0-9) with 4 sub-sections (a,b,c,d) is provided
+        - A 4-digit code (digits can repeat)
+        - Access to the BIP-39 word list (https://github.com/bitcoin/bips/blob/master/bip-0039/ english.txt) and a word list randomizer (https://www.random.org/lists/) to generate decoy words.
+        </p>
+        <p>3. Important Security Note
+        This method offers only 10,000 possible combinations, which equates to about 2^13. For a method to be secure against brute-force attacks, a far greater number of combinations is required—typically 2^128 or more. This method is not safe from brute-force decryption, so it should be used with caution. It is not recommended that this method be stored online.
+        </p>
+    
+
+    <div>
+        4. The Template 
+        Step-by-step encryption process outlined in Section 5
+            INSERT CHART HERE
+    </div>
+    <p>
+        5. Step-By-Step Encryption Process
+        Step 1: Choose Your 4-Digit Code
+- Select a 4-digit code, where digits can repeat. This code determines the organization of your seed phrase.
+- Example Code: 5273
+Step 2: Divide Your Seed Phrase
+- Divide your 12-word seed phrase into 4 sections, each containing 3 words. - Example:
+- Seed phrase: apple banana cherry date eagle fish grape hat iron jam kite lime - Divided as:
+- Section 1: apple banana cherry - Section 2: date eagle fish
+- Section 3: grape hat iron
+- Section 4: jam kite lime
+Step 3: Assign Sections to the Code
+- Each digit in your 4-digit code corresponds to a section on the keypad. Each digit has 4 sub- sections (`a`, `b`, `c`, `d`), allowing digits to be repeated.
+Example with Code 5273: - 5a: apple banana cherry - 2a: date eagle fish
+- 7a: grape hat iron
+- 3a: jam kite lime
+Example with Code 1223 (Repeated Digits): - 1a: apple banana cherry
+- 2a: date eagle fish
+- 2b: grape hat iron
+- 3a: jam kite lime
+Step 4: Create Decoy Sections
+- For each digit and its sub-sections not used by the actual seed phrase, create decoy sections populated with random words from the BIP39 word list.
+- Use the BIP-39 word list (https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt) and a word list randomizer (https://www.random.org/lists/) to generate decoy words.
+- Example Decoys:
+- 5b: water cloud bird
+- 2c: mountain river tree - 7b: stone sand leaf
+Step 5: Ways to Store Your Encrypted Seed Phrase
+- Store multiple copies of your encrypted seed phrase offline to ensure you have backups in case one is lost or damaged.
+- Seed phrases can be written on a piece of paper, in a notebook, on a Word document, etc.
+    </p>
+    <form action="/submit" method="POST">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
