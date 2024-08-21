@@ -7,78 +7,99 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <h1>Manual Encryption for a Bitcoin 12-Word BIP39 Seed Phrase
-    </h1>
-<div>
-    <h2>Templates and User Guide for Manually 
+    <div> 
+    <h1>Templates and User Guide for Manually 
         Encrypting Cryptocurrency Seed Phrases Using 
-        an Alpha-Numeric Keypad and a 4-Digit Code</h2>
-    
-    
-        <p>
+        an Alpha-Numeric Keypad and a 4-Digit Code
+    </h1>
+
+    <p>
         1. Background
-In the field of cryptocurrency, securely storing private key seed phrases (here out referred to as
-“seed phrases”, “seed phrase”, “phrases”, or “phrase”) is critical to protecting one’s digital
-assets. One way in which phrases can be securely stored is by manually writing (or typing) the
-phrase on paper (or electronic document). This specific method for storing phrases is
-vulnerable to unauthorized access. Unauthorized accessors can use the phrase, if discovered,
-to steal cryptocurrency funds. The following manual encryption method attempts to address
-this vulnerability using an alpha-numeric keypad and a 4-digit code to obscure the seed phrase
-among decoy words.
+        In the field of cryptocurrency, securely storing private key seed phrases (here out referred to as
+        “seed phrases”, “seed phrase”, “phrases”, or “phrase”) is critical to protecting one’s digital
+        assets. One way in which phrases can be securely stored is by manually writing (or typing) the
+        phrase on paper (or electronic document). This specific method for storing phrases is
+        vulnerable to unauthorized access. Unauthorized accessors can use the phrase, if discovered,
+        to steal cryptocurrency funds. The following manual encryption method attempts to address
+        this vulnerability using an alpha-numeric keypad and a 4-digit code to obscure the seed phrase
+        among decoy words.
     </p>
-        <p>2. What You Need
-        - 12-word BIP-39 seed phrase (generated from your Bitcoin wallet of choice)
-        - The Template for the numeric keypad (0-9) with 4 sub-sections (a,b,c,d) is provided
-        - A 4-digit code (digits can repeat)
-        - Access to the BIP-39 word list (https://github.com/bitcoin/bips/blob/master/bip-0039/ english.txt) and a word list randomizer (https://www.random.org/lists/) to generate decoy words.
-        </p>
-        <p>3. Important Security Note
-        This method offers only 10,000 possible combinations, which equates to about 2^13. For a method to be secure against brute-force attacks, a far greater number of combinations is required—typically 2^128 or more. This method is not safe from brute-force decryption, so it should be used with caution. It is not recommended that this method be stored online.
-        </p>
+    
+    <p>
+        2. Purpose
+        To securely store cryptocurrency seed phrases by manually encrypting them using an alpha- numeric keypad and a 4-digit code.
+    </p>
+        
+    <p>
+        3. Important Security Notices
+        This is not a private keys/ seed phrase generator.
+        This method does not protect against brute force computer decryption. 
+        The following templates offer just 10,000 possible combinations, which equates 
+        to about 2^13. For a method to be secure against brute force attacks, a 
+        far greater number of combinations is required— typically 2^128 or more. 
+        Please be mindful of this when using this method.
+    </p>
     
 
-    <div>
-        4. The Template 
-        Step-by-step encryption process outlined in Section 5
-            INSERT CHART HERE
-    </div>
     <p>
-        5. Step-By-Step Encryption Process
-        Step 1: Choose Your 4-Digit Code
-- Select a 4-digit code, where digits can repeat. This code determines the organization of your seed phrase.
-- Example Code: 5273
-Step 2: Divide Your Seed Phrase
-- Divide your 12-word seed phrase into 4 sections, each containing 3 words. - Example:
-- Seed phrase: apple banana cherry date eagle fish grape hat iron jam kite lime - Divided as:
-- Section 1: apple banana cherry - Section 2: date eagle fish
-- Section 3: grape hat iron
-- Section 4: jam kite lime
-Step 3: Assign Sections to the Code
-- Each digit in your 4-digit code corresponds to a section on the keypad. Each digit has 4 sub- sections (`a`, `b`, `c`, `d`), allowing digits to be repeated.
-Example with Code 5273: - 5a: apple banana cherry - 2a: date eagle fish
-- 7a: grape hat iron
-- 3a: jam kite lime
-Example with Code 1223 (Repeated Digits): - 1a: apple banana cherry
-- 2a: date eagle fish
-- 2b: grape hat iron
-- 3a: jam kite lime
-Step 4: Create Decoy Sections
-- For each digit and its sub-sections not used by the actual seed phrase, create decoy sections populated with random words from the BIP39 word list.
-- Use the BIP-39 word list (https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt) and a word list randomizer (https://www.random.org/lists/) to generate decoy words.
-- Example Decoys:
-- 5b: water cloud bird
-- 2c: mountain river tree - 7b: stone sand leaf
-Step 5: Ways to Store Your Encrypted Seed Phrase
-- Store multiple copies of your encrypted seed phrase offline to ensure you have backups in case one is lost or damaged.
-- Seed phrases can be written on a piece of paper, in a notebook, on a Word document, etc.
+        4. What You Need 
+        <span>
+            • 12-word cryptocurrency private key seed phrase (generated from your cryptocurrency wallet of choice)
+            • The template(s) for the alpha-numeric keypad provided
+            • It is recommended that users reference the BIP-39 word list (https://github.com/bitcoin/bips/
+                blob/master/bip-0039/english.txt) and a word list randomizer (https://www.random.org/lists/) to generate decoy words
+        </span>
     </p>
+
+    <p>
+        5. Process Overview
+        
+        1. Select a 4-digit code (digits can be repeated up to 4 times)
+        2. Divide your seed phrase into 4 equal parts
+        3. Map each part of the seed phrase to a specific section on the numeric keypad to your 4-
+            digit code
+        4. Fill sections of the keypad that are not mapped to your seed phrase with decoy words
+    </p>
+
+    <ol>
+        6. User Guide (Applies to 12, 16, 24 word seed phrases)
+        
+        Prerequisite:
+        User already has a 12-word cryptocurrency private key seed phrase that was generated using a cryptocurrency private key seed phrase generator (e.g., a cryptocurrency wallet like Coinbase Wallet)
+        • Example Seed Phrase: apple banana cherry date eagle fish grape hat iron jam kite lime
+        <img src="jimmys-project/images/step-6-example-chart.png" alt="step 6 example">
+        
+        <li>Step 1: Determine Your 4-Digit Code
+            User chooses their numeric 4-digit code. Digits can be repeated up to 4 times by using the 4 alphabetic subsections within a given digit. The code will be used to determine the organization of your seed phrase.
+            • Example Code: 5273
+            <img src="jimmys-project/images/step-6-sub-1.png" alt="step 6 sub 1 example">
+        
+            • Example Code (w/ Repeated Digits): 1223
+            <img src="jimmys-project/images/step-6-sub-1.2.png" alt="step 6 sub 1.2 example">
+        </li>
+
+        <li>Step 2: Divide Your Seed Phrase
+            Divide your 12-word seed phrase into 4 sequential parts, each containing 3 words in the original order of the seed phrase.
+            • Example Seed Phrase Parts:
+            - Section 1: apple banana cherry - Section 2: date eagle fish
+            - Section 3: grape hat iron
+            - Section 4: jam kite lime
+            <img src="jimmys-project/images/step-6-sub-2.png" alt="step 6 sub 2 example">
+        </li>
+        <li>Step 3: Assign Seed Phrase Parts to the Code
+            Each of the 4 seed phrase parts corresponds with an alpha-numeric section in your 4-digit keypad. Each digit has 4 alphabetically sequential sub-sections (`a`, `b`, `c`, `d`), allowing digits in the 4-digit code to be repeated up to 4 times. The first time that a digit is used in the 4-digit code populate subsection ‘a’; the second time that a digit is used in the 4-digit code populate subsection ‘b’; and, so on and so forth for sub-sections ‘c’ and ‘d’.
+            • Example with Code 5273: - 5a: apple banana cherry - 2a: date eagle fish
+            - 7a: grape hat iron
+            - 3a: jam kite lime
+            <img src="" alt="">
+        </li>
+    </ol>
 </div>
 
 <div>
-    <footer>  add footer here  </footer>
+    <footer>  © 2024 James Vaughan. All Right Reserved. Copyright Registration Pending  </footer>
 
-    <!-- <form action="/submit" method="POST">
+    <!-- <form action="/submit" method="POST"> for dynamic user interaction
         <label for="name">Name: </label>
         <input type="text" id="name" name="name">
         <button type="submit">Submit</button>
