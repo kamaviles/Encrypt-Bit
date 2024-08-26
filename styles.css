@@ -1,23 +1,60 @@
 body {
     font-family:'Times New Roman', Times, serif;
     margin: 20px;
-    background-color:azure;
+    background-color:rgb(242, 246, 214);
     font-size: 18px;
-    color: rgba(36, 17, 208, 0.666);
+    color: rgb(95, 93, 93);
 }
 
 h1 {
-    color: #2d0aba;
+    color: black;
+}
+nav {
+    border-top: 2px solid ;
+    border-bottom: 2px solid;
+    
+}
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    
+}
+li.template {
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
 }
 
 h3 {
-    color:rgb(21, 49, 138); 
+    color: black; 
 }
 h4 {
-    color:rgb(0, 128, 255)
+    color:black)
+}
+
+.user-guide {
+    list-style-type: none;
+}
+a{
+    color: rgb(95, 93, 93);
+    
+}
+a:visited {
+    color: rgb(95, 93, 93);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 
+footer {
+    text-align: center;
+}
 /* form {
     margin-top: 20px;
 }
