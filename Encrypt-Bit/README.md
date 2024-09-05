@@ -1,2 +1,2 @@
-# jimmys-project
+# EncryptBit
 bitcoin seed phrase manual
