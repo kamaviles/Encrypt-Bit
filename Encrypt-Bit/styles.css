@@ -19,8 +19,13 @@ nav > ul {
     flex-direction: row;
     list-style: none;
     padding: 0;
-    
-    
+
+}
+
+.templates ul li{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
 li.template {
     margin-right: 20px;
@@ -67,7 +72,8 @@ img {
 
 footer {
     text-align: center;
-    color:rgb(183, 162, 97)
+    color:rgb(183, 162, 97);
+    padding: 30px;
 }
 /* form {
     margin-top: 20px;
