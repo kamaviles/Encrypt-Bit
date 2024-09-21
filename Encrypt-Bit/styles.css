@@ -1,13 +1,23 @@
 body {
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier, monospace ;
+    
     margin: 20px;
-    background-color:rgb(242, 246, 214);
+    
+    border: 4mm ridge rgba(211, 220, 50, .6);
+    padding: 20px;
+    background-color: #b8d2ff;
     font-size: 18px;
-    color: rgb(95, 93, 93);
+    color: black;
+   text-align: center;
+
+}
+p {
+  
 }
 
 h1 {
     color: black;
+    text-align: center;
 }
 nav {
     border-top: 2px solid ;
@@ -32,10 +42,10 @@ li.template {
     
 }
 li.template a {
-    color:rgb(155, 111, 57)
+    color:rgb(235, 254, 249);
 }
 li.template a:hover {
-    color: rgb(207, 182, 23);
+    color: white;
 }
 nav ul li a {
     text-decoration: none;
@@ -43,25 +53,26 @@ nav ul li a {
     
 }
 
-h3 {
+h2 {
     color: black; 
+    text-align: center;
 }
 h4 {
-    color:black)
+    color:black;
 }
 
 .user-guide {
     list-style-type: none;
 }
 a{
-    color: rgb(95, 93, 93);
+    color: rgb(235, 254, 249);
     
 }
 a:visited {
-    color: rgb(95, 93, 93);
+    color: rgb(235, 254, 249);
 }
 a:hover{
-    color:rgb(207, 182, 23);
+    color:rgb(255, 251, 251);
 }
 
 img {
@@ -72,8 +83,12 @@ img {
 
 footer {
     text-align: center;
-    color:rgb(183, 162, 97);
+    color:black;
     padding: 30px;
+}
+ol {
+    text-align: left;
+    margin: 20px;
 }
 /* form {
     margin-top: 20px;
