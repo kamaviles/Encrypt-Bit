@@ -5,10 +5,10 @@ body {
     
     border: 4mm ridge rgba(211, 220, 50, .6);
     padding: 20px;
-    background-color: #b8d2ff;
+    background-color: #cfe1ff;
     font-size: 18px;
     color: black;
-   text-align: center;
+   text-align: ;
 
 }
 p {
@@ -42,7 +42,7 @@ li.template {
     
 }
 li.template a {
-    color:rgb(235, 254, 249);
+    color:rgb(116, 132, 127);
 }
 li.template a:hover {
     color: white;
@@ -90,10 +90,3 @@ ol {
     text-align: left;
     margin: 20px;
 }
-/* form {
-    margin-top: 20px;
-}
-
-input {
-    margin-right: 10px;
-} */
