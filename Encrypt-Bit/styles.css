@@ -3,12 +3,12 @@ body {
     
     margin: 20px;
     
-    border: 4mm ridge rgba(211, 220, 50, .6);
+    border: 4mm ridge rgba(83, 116, 115, 0.6);
     padding: 20px;
-    background-color: #cfe1ff;
+    background-color: #ebf2fe;
     font-size: 18px;
     color: black;
-   text-align: ;
+   
 
 }
 p {
@@ -45,7 +45,7 @@ li.template a {
     color:rgb(116, 132, 127);
 }
 li.template a:hover {
-    color: white;
+    color: rgb(156, 184, 240);
 }
 nav ul li a {
     text-decoration: none;
@@ -64,15 +64,15 @@ h4 {
 .user-guide {
     list-style-type: none;
 }
-a{
-    color: rgb(235, 254, 249);
+/* a{
+    color: rgb(115, 250, 214);
     
-}
+} */
 a:visited {
-    color: rgb(235, 254, 249);
+    color: rgb(107, 103, 108);
 }
 a:hover{
-    color:rgb(255, 251, 251);
+    color:rgb(156, 184, 240);
 }
 
 img {
